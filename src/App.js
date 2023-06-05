@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import '@fontsource/roboto';
+import React from 'react';
+import NavBar from './components/Navbar';
+import FilmGrid from './components/FilmGrid';
+import { Container } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import { DarkModeContext } from './context/DarkModeContext';
+import { Routes, Route } from 'react-router-dom';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import News from './pages/News';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
+  const { theme } = React.useContext(DarkModeContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <NavBar />
+      <Container maxWidth="xl">
+        <Routes>
+          <Route path="/" element={<FilmGrid />} />
+          <Route path="/home" element={<FilmGrid />} />
+          <Route path="/news" element={<News />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </Container>
+      <Footer />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

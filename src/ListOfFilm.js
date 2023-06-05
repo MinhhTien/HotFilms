@@ -1,0 +1,65 @@
+export const listOfFilms = [
+  {
+    id: 1,
+    Image: 'https://i.pinimg.com/originals/48/a9/7f/48a97f9f1f795c872bb0568b201631f2.jpg',
+    Title: 'Star Wars: Episode IV - A New Hope',
+    Year: '1977',
+    Nation: 'USA',
+  },
+  {
+    id: 2,
+    Image: 'https://i.bloganchoi.com/bloganchoi.com/wp-content/uploads/2022/12/poster-avatar-the-way-of-water-696x870.jpg',
+    Title: 'Avatar: The Way of Water',
+    Year: '1977',
+    Nation: 'USA',
+  },
+  {
+    id: 3,
+    Image: 'https://i.ebayimg.com/images/g/qVwAAOSwEK5f2rzy/s-l1600.jpg',
+    Title: 'Titanic',
+    Year: '1997',
+    Nation: 'USA',
+  },
+  {
+    id: 4,
+    Image: 'https://assets.gqindia.com/photos/5d0b2410eaf24a37ed54d99d/1:1/w_1079,h_1079,c_limit/avengers-endgame.jpg',
+    Title: 'Avengers: Endgame',
+    Year: '2019',
+    Nation: 'USA',
+  },
+  {
+    id: 5,
+    Image: 'https://th.bing.com/th/id/OIP.f_Bsqc6N4xZ1HXF311IYCwHaLH?w=202&h=303&c=7&r=0&o=5&dpr=1.3&pid=1.7',
+    Title: 'Parasite',
+    Year: '2019',
+    Nation: 'Korea',
+  },
+  {
+    id: 6,
+    Image: 'https://upload.wikimedia.org/wikipedia/vi/9/9e/Ban_dao_Peninsula_poster.jpg',
+    Title: 'Train to Busan 2: Peninsula',
+    Year: '2020',
+    Nation: 'Korea',
+  },
+  {
+    id: 7,
+    Image: 'https://media-cache.cinematerial.com/p/500x/kjdr1pas/inside-the-yellow-cocoon-shell-international-movie-poster.jpg',
+    Title: 'Inside the Yellow Cocoon Shell',
+    Year: '2023',
+    Nation: 'Vietnam',
+  },
+  {
+    id: 8,
+    Image: 'https://th.bing.com/th/id/R.dbd3891a1c144f2f2580e79845970e3e?rik=wEn5KjYSVUB0aw&pid=ImgRaw&r=0',
+    Title: 'Harry Potter And The Deathly Hallows',
+    Year: '2011',
+    Nation: 'USA',
+  },
+  {
+    id: 9,
+    Image: 'https://upload.wikimedia.org/wikipedia/vi/2/22/Fast_X_VN_poster.jpg',
+    Title: 'Fast & Furious 10',
+    Year: '2023',
+    Nation: 'USA',
+  }
+];
